@@ -1,0 +1,4 @@
+#main {
+  height: auto !important; /* real browsers */
+  min-height: 100%;
+}

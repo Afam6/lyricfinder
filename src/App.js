@@ -8,6 +8,7 @@ import Lyrics from './components/tracks/Lyrics';
 import { Provider } from './context';
 
 import './App.css';
+import Footer from './components/layout/Footer';
 
 class App extends Component {
   render() {
@@ -16,12 +17,13 @@ class App extends Component {
         <Router>
           <React.Fragment>
             <Navbar />
-            <div className="container">
+            <div className="container" id="main">
               <Switch>
                 <Route exact path="/" component={Index} />
                 <Route exact path="/lyrics/track/:id" component={Lyrics} />
               </Switch>
             </div>
+            <Footer />
           </React.Fragment>
         </Router>
       </Provider>
