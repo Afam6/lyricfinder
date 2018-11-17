@@ -49,12 +49,12 @@ class Lyrics extends Component {
             Go Back
           </Link>
           <div className="card">
-            <h5 className="card-header">
+            <h1 className="card-header text-center">
               {track.track_name} by <span className="text-secondary">{track.artist_name}</span>
-            </h5>
+            </h1>
             <div className="card-body">
               {lyrics.lyrics_body.split('\n').map((item, i) => {
-                return <p key={i} className="card-text">{item}</p>;
+                return <p key={i} className="card-text text-center">{item}</p>;
               })}
             </div>
           </div>
